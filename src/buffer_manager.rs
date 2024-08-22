@@ -4,7 +4,6 @@ use std::{
     fs::OpenOptions,
     io::{Read, Seek, SeekFrom, Write},
     os::unix::fs::{FileExt, OpenOptionsExt},
-    process::exit,
     rc::Rc,
 };
 
@@ -88,7 +87,7 @@ impl BufferManager {
             }
             None => {
                 // read from disk
-                let mut fd = OpenOptions::new()
+                let fd = OpenOptions::new()
                     .read(true)
                     .write(true)
                     .create(true)
@@ -149,7 +148,8 @@ impl BufferManager {
             None => {
                 if block_offset == 0 {
                     // try to create the file
-                    let mut fd = OpenOptions::new()
+                    // TODO: do this properly
+                    let _fd = OpenOptions::new()
                         .read(true)
                         .write(true)
                         .create(true)

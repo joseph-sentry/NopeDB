@@ -3,7 +3,6 @@ use std::{
     fmt::Debug,
     fs::{create_dir, remove_file, rename},
     ops::Bound,
-    process::exit,
 };
 
 use serde::{Deserialize, Serialize};

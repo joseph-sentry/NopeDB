@@ -1,15 +1,12 @@
 #![feature(btree_cursors)]
 
 pub mod buffer_manager;
-pub mod commands;
 pub mod fixed;
 pub mod lsm_tree;
 pub mod slotted_page;
 pub mod storage_engine;
 
 use lsm_tree::LSMTree;
-use std::fs::{metadata, Metadata};
-use std::os::unix::fs::MetadataExt;
 
 use buffer_manager::BufferManager;
 

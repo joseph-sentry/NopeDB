@@ -76,7 +76,6 @@ impl Serialize for MyOwnDateTime {
     where
         S: serde::Serializer,
     {
-        self.whatever.timestamp();
         serializer.serialize_i64(self.whatever.timestamp())
     }
 }
