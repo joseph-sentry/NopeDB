@@ -1,6 +1,14 @@
 [package]
-name = "timeseries"
+name = "hack-week-2024"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+bimap = "0.6.3"
+bincode = "1.3.3"
+chrono = "0.4.38"
+serde = { version = "1.0.208", features = ["derive"] }
+text_io = "0.1.12"
+
+[toolchain]
+channel = "nightly"
