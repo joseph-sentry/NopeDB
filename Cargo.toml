@@ -1,5 +1,5 @@
 [package]
-name = "hack-week-2024"
+name = "NopeDB"
 version = "0.1.0"
 edition = "2021"
 

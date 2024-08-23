@@ -46,7 +46,7 @@ fn main() {
         }
     }
 
-    // l.merge(&mut manager);
+    l.merge(&mut manager);
     manager.flush();
     println!("done!");
 }

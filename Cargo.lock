@@ -3,6 +3,17 @@
 version = 3
 
 [[package]]
+name = "NopeDB"
+version = "0.1.0"
+dependencies = [
+ "bimap",
+ "bincode",
+ "chrono",
+ "serde",
+ "text_io",
+]
+
+[[package]]
 name = "android-tzdata"
 version = "0.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -78,17 +89,6 @@ name = "core-foundation-sys"
 version = "0.8.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "773648b94d0e5d620f64f280777445740e61fe701025087ec8b57f45c791888b"
-
-[[package]]
-name = "hack-week-2024"
-version = "0.1.0"
-dependencies = [
- "bimap",
- "bincode",
- "chrono",
- "serde",
- "text_io",
-]
 
 [[package]]
 name = "iana-time-zone"
